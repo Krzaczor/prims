@@ -1,0 +1,88 @@
+html {
+    --countColums: 10;
+    --sizeCard: 50px;
+    --bgColor: rgb(58, 58, 58);
+    --heightControl: 80px;
+
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: rgb(230, 230, 230);
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.control-wrapper {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: var(--heightControl);
+    z-index: 2;
+}
+
+.control {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+}
+
+.control > *:not(:last-child) {
+    margin-right: 12px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(var(--countColums), 1fr);
+    gap: 7px;
+    margin: 0 auto;
+    width: min-content;
+    padding: 12px;
+}
+
+.card {
+    padding: 12px 15px;
+}
+
+.card-primary {
+    /* background-color: rgb(68, 68, 68); */
+}
+
+.card-second {
+    background-color: rgb(24, 90, 9);
+}
+
+.card-header {
+    font-size: 1rem;
+}
+
+.input-group > *:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+}
+
+.input {
+    font-size: 1rem;
+    padding: 5px;
+    background-color: var(--bgColor);
+    border: 1px solid #aaaaaa;
+    color: #fff;
+    width: 100px;
+}
