@@ -50,7 +50,7 @@ const isPrim = (number, prims) => {
     return prims.includes(number);
 }
 
-const MAX_NUMBER = 997;
+const MAX_NUMBER = 1000;
 
 const $firstNumber = observer(0);
 const $countColumns = observer(10);
